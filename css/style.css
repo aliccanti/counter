@@ -1,0 +1,151 @@
+
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+
+    height: 100vh;
+    width: 100vw;
+    
+
+    background: #66c3d0;
+
+  }
+
+  header {
+    width: 100vw;
+    font-size: 0.8rem;
+    color: whitesmoke;
+    text-transform: uppercase;
+
+    text-align: center;
+
+  }
+
+  main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .content {
+      width: 22rem;
+      height: 20rem;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+
+      margin-top: 3rem;
+  }
+  
+  .counter-container {
+
+      width: 10rem;
+      height: 8rem;
+
+      font-size: 5rem;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background-color: #aed9e0;
+      color: #355070;
+
+      border-radius: 30%;
+
+  }
+
+  .btn-more,
+  .btn-less {
+      width: 7rem;
+      height: 3rem;
+
+      border-radius: 80px;
+      border: 2px solid transparent;
+
+      font-size: 2rem;
+
+      background-color: #ffa69e;
+      color: whitesmoke;
+      font-weight: bolder;
+  }
+
+  .btn-reset {
+    width: 5rem;
+    height: 2.5rem;
+
+    border-radius: 85px;
+    border: 2px solid transparent;
+
+    font-size: 1rem;
+
+    background-color: #b8f2e6;
+    color: #355070;
+    font-weight: bold;
+  }
+
+  footer {
+
+    width: 100%;
+    margin: 0;   
+    text-align: center;
+
+    position: fixed;
+    bottom: 0;
+
+    font-size: 1rem;
+
+    
+  }
+    
+  .waves {
+      
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0; 
+
+    width: 100vw;
+    height: 10rem;
+    
+  }
+  
+  .wave-1 {
+        animation: moveWave1 3s ease-in-out infinite alternate;
+      }
+  
+      @keyframes moveWave1 {
+        from {
+          transform: translateX(-2000px);
+        }
+      }
+  
+      .wave-2 {
+        animation: moveWave2 3s 1.2s ease-in-out infinite alternate;
+      }
+  
+      @keyframes moveWave2 {
+        from {
+          transform: translateX(-1800px);
+        }
+      }
+  
+      .wave-3 {
+        animation: moveWave3 3s 0.7s ease-in-out infinite alternate;
+      }
+  
+      @keyframes moveWave3 {
+        from {
+          transform: translateX(-1600px);
+        }
+      }
+  
+  
