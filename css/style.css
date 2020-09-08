@@ -24,6 +24,7 @@
     text-transform: uppercase;
 
     text-align: center;
+    padding: 1rem;
 
   }
 
@@ -76,6 +77,8 @@
       background-color: #ffa69e;
       color: whitesmoke;
       font-weight: bolder;
+
+      margin: 0.5rem;
   }
 
   .btn-reset {
@@ -90,6 +93,21 @@
     background-color: #b8f2e6;
     color: #355070;
     font-weight: bold;
+
+    text-transform: uppercase;
+  }
+
+  .buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-less,
+  .btn-more,
+  .btn-reset:hover {
+    cursor: pointer;
+    
   }
 
   footer {
@@ -104,6 +122,46 @@
     font-size: 1rem;
 
     
+  }
+
+  @media (min-width: 1100px) {
+
+    .content {
+
+
+      width: 35rem;
+      height: 23rem;
+    }
+
+    .counter-container {
+
+      width: 15rem;
+      height: 13rem;
+
+      font-size: 9rem;
+    }
+
+    .btn-more,
+    .btn-less {
+      width: 9rem;
+      height: 4rem;
+    }
+
+    .btn-reset {
+
+      width: 8rem;
+      height: 3rem;
+
+    }
+
+    header {
+      font-size: 1.5rem;
+    }
+
+    .waves {
+      display: none;
+    }
+
   }
     
   .waves {
